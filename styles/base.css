@@ -1,0 +1,10 @@
+body { 
+  font-family: 'Courier New', Courier, monospace;
+  flex: content;
+}
+
+.container{
+  background-color: rgb(179, 185, 199);
+  max-width: 200px;
+  flex-direction: column;
+}

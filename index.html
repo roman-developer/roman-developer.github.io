@@ -1,1 +1,32 @@
-Hello World
+<!-- Sitio multi-idioma
+  - Para cada elemento donde tenga texto hay que meterle in id.
+  - Ese id se usa en el archivo base.js para modificar el idioma según eliga el usuario
+  - El idioma se cambia en los botones que a su vez recargan la página
+  - Los locales se guardan en una variable general 'language' en el archivo locales.js
+-->
+
+<html lang="es">
+  <head>
+    <title>Test site</title>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="styles/base.css" media="screen" />
+  </head>
+  <body>
+    <a href="#es" data-reload>Español</a>
+    <a href="#en" data-reload>English</a>
+
+    <div class="container">
+      <p id="hi"> Hola! </p>
+      <p id="intro"> Soy Jose, Ingeniero Software </p>
+    </div>    
+
+    <div class="maintenance">
+      <p id="maintenance1">Esta página está en mantenimiento</p>
+      <p id="maintenance2">Disculpa las molestias</p>
+    </div>
+
+    <script type="text/javascript" src="scripts/locales.js"></script>
+    <script type="text/javascript" src="scripts/base.js"></script>
+  </body>
+</html>
